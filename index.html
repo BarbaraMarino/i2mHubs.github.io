@@ -1,262 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>i²mHubs | Exploring Academic Career Pathways</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i²mHubs</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height:1.6;
-    color:#333;
-}
-
-header{
-    background:#003366;
-    color:white;
-    padding:1rem 3rem;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:2rem;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-}
-
-.hero{
-    background:linear-gradient(rgba(0,51,102,.8),rgba(0,51,102,.8)),
-               url("faculty-banner.jpg");
-    background-size:cover;
-    background-position:center;
-    color:white;
-    text-align:center;
-    padding:6rem 2rem;
-}
-
-.hero h1{
-    font-size:3rem;
-    margin-bottom:1rem;
-}
-
-.hero p{
-    max-width:900px;
-    margin:auto;
-    font-size:1.2rem;
-}
-
-.button{
-    display:inline-block;
-    margin-top:2rem;
-    padding:12px 25px;
-    background:#f0b323;
-    color:#003366;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:bold;
-}
-
-.section{
-    padding:4rem 10%;
-}
-
-.section h2{
-    color:#003366;
-    margin-bottom:1rem;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:2rem;
-    margin-top:2rem;
-}
-
-.card{
-    background:#f7f7f7;
-    padding:2rem;
-    border-radius:10px;
-}
-
-.card h3{
-    color:#003366;
-    margin-bottom:1rem;
-}
-
-.module-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:2rem;
-    margin-top:2rem;
-}
-
-.module{
-    border-left:5px solid #003366;
-    background:white;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
-    padding:2rem;
-}
-
-footer{
-    background:#003366;
-    color:white;
-    text-align:center;
-    padding:2rem;
-}
-</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-    <nav>
-        <h2>i²mHubs</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Module 1</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Evaluation</a></li>
-            <li><a href="#">Contact</a></li>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/i2-icon.png" alt="i²mHubs">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="explore.html">Explore Academic Careers</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </nav>
+
 </header>
 
 <section class="hero">
+
+    <img src="images/i2mhubs-logo.png"
+         alt="i²mHubs Logo"
+         class="hero-logo">
+
     <h1>Exploring Academic Career Pathways</h1>
 
     <p>
-        An online learning experience designed to help graduate students
-        understand faculty careers, institutional diversity, and the factors
-        that shape academic career decisions.
+        Helping graduate students understand faculty careers,
+        institutional diversity, and pathways into academia.
     </p>
 
-    <a href="#" class="button">Begin Module 1</a>
+    <a href="explore.html" class="button">
+        Begin Exploring
+    </a>
+
 </section>
 
-<section class="section">
-    <h2>Why This Resource?</h2>
+<section class="overview">
+
+    <h2>What is i²mHubs?</h2>
 
     <p>
-        Many aspects of academic careers are learned informally through
-        mentoring relationships and personal networks. This platform makes
-        that knowledge more explicit by providing accessible information
-        about faculty roles, institutional missions, and common barriers
-        that may discourage talented individuals from pursuing academic
-        careers.
+        i²mHubs is a mentoring initiative designed to motivate,
+        prepare, and support individuals from graduate school
+        through the early years of an academic appointment.
     </p>
 
-    <div class="cards">
-
-        <div class="card">
-            <h3>Faculty Perspectives</h3>
-            <p>
-                Hear directly from faculty members about their career
-                pathways, responsibilities, and experiences across
-                different institution types.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Structured Learning</h3>
-            <p>
-                Learn about teaching, research, service, tenure,
-                promotion, and institutional expectations through
-                curated educational materials.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Guided Reflection</h3>
-            <p>
-                Reflect on your goals, values, interests, and how
-                different academic pathways align with your career
-                aspirations.
-            </p>
-        </div>
-
-    </div>
 </section>
 
-<section class="section" style="background:#f4f8fc;">
-    <h2>The i²mHubs Pathway</h2>
+<section class="cards">
 
-    <div class="module-grid">
-
-        <div class="module">
-            <h3>Module 1</h3>
-            <p>
-                Build foundational knowledge about academic careers,
-                faculty responsibilities, institutional types, and
-                career alignment.
-            </p>
-        </div>
-
-        <div class="module">
-            <h3>Module 2</h3>
-            <p>
-                Participate in an in-person workshop focused on
-                preparing for and navigating the academic job search
-                process.
-            </p>
-        </div>
-
-        <div class="module">
-            <h3>Module 3</h3>
-            <p>
-                Connect with mentoring hubs that provide support during
-                the transition into and through the early years of an
-                academic appointment.
-            </p>
-        </div>
-
+    <div class="card">
+        <h3>Discover</h3>
+        <p>
+            Explore faculty roles and institutional types.
+        </p>
     </div>
-</section>
 
-<section class="section">
-    <h2>Learning Components</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Videos</h3>
-            <p>Faculty interviews and career narratives.</p>
-        </div>
-
-        <div class="card">
-            <h3>Reading Materials</h3>
-            <p>Explanations of faculty roles, expectations, and institutional contexts.</p>
-        </div>
-
-        <div class="card">
-            <h3>Reflection Exercises</h3>
-            <p>Activities designed to help participants explore career fit and professional identity.</p>
-        </div>
-
+    <div class="card">
+        <h3>Learn</h3>
+        <p>
+            Understand the academic application process.
+        </p>
     </div>
+
+    <div class="card">
+        <h3>Overcome</h3>
+        <p>
+            Address common barriers and challenges.
+        </p>
+    </div>
+
 </section>
 
 <footer>
-    <p>
-        i²mHubs Academic Career Pathways Initiative
-    </p>
+    © 2026 i²mHubs
 </footer>
 
 </body>
