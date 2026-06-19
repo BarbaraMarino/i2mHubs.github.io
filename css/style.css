@@ -1,405 +1,403 @@
 :root {
---navy: #003B7A;
---teal: #2CA79B;
---gold: #F2B52B;
---light: #F7FAFC;
---gray: #6B7280;
+    --navy: #003B7A;
+    --teal: #2CA79B;
+    --gold: #F2B52B;
+    --light: #F7FAFC;
+    --gray: #6B7280;
 }
- 
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:"Segoe UI", Arial, sans-serif;
-background:white;
-color:#333;
-line-height:1.6;
+    font-family:"Segoe UI", Arial, sans-serif;
+    background:white;
+    color:#333;
+    line-height:1.6;
 }
 
 /* =========================
-NAVIGATION
+   NAVIGATION
 ========================= */
 
 .navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
+    padding:15px 50px;
 
-padding:15px 50px;
+    background:rgba(255,255,255,.96);
 
-background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);
 
-backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
 
-position:sticky;
-top:0;
-z-index:1000;
-
-box-shadow:0 2px 8px rgba(0,0,0,.08);
-
-
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
 
 .logo img{
-height:55px;
+    height:55px;
 }
 
 .nav-links{
-display:flex;
-list-style:none;
-gap:30px;
+    display:flex;
+    list-style:none;
+    gap:30px;
 }
 
 .nav-links a{
-text-decoration:none;
-color:var(--navy);
-font-weight:600;
-transition:.2s ease;
+    text-decoration:none;
+    color:var(--navy);
+    font-weight:600;
+    transition:.2s ease;
 }
 
 .nav-links a:hover{
-color:var(--teal);
+    color:var(--teal);
 }
 
 /* =========================
-HERO
+   HERO
 ========================= */
 
 .hero{
-    padding:80px 20px 80px 20px;
+    padding:70px 20px 80px 20px;
     text-align:center;
     background:white;
 }
 
 .hero-brand{
-max-width:1000px;
-margin:auto;
+    max-width:1000px;
+    margin:auto;
 }
 
 .hero-icon{
-width:500px;
-max-width:90%;
-margin-bottom:15px;
+    width:500px;
+    max-width:90%;
+    margin-bottom:15px;
 }
 
 .hero h1{
-font-size:3.5rem;
-color:var(--navy);
-margin-bottom:15px;
-line-height:1.1;
+    font-size:2.8rem;
+    color:var(--navy);
+    margin-bottom:12px;
+    line-height:1.15;
 }
 
 .hero-subtitle{
-color:var(--teal);
-font-weight:600;
-letter-spacing:.5px;
-margin-bottom:25px;
-font-size:1.1rem;
+    color:var(--teal);
+    font-weight:600;
+    letter-spacing:.5px;
+    margin-bottom:20px;
+    font-size:1rem;
 }
 
 .tagline{
-font-size:1.3rem;
-color:var(--gray);
-max-width:800px;
-margin:auto;
+    font-size:1.2rem;
+    color:var(--gray);
+    max-width:800px;
+    margin:auto;
 }
 
 /* =========================
-BUTTONS
+   BUTTON
 ========================= */
 
 .button{
-display:inline-block;
+    display:inline-block;
+    margin-top:35px;
 
+    background:var(--gold);
+    color:black;
 
-margin-top:35px;
+    text-decoration:none;
 
-background:var(--gold);
-color:black;
+    padding:16px 40px;
 
-text-decoration:none;
+    border-radius:50px;
 
-padding:16px 40px;
+    font-weight:700;
+    font-size:1.05rem;
 
-border-radius:50px;
-
-font-weight:700;
-font-size:1.05rem;
-
-transition:.25s ease;
-
-
+    transition:.25s ease;
 }
 
 .button:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
 /* =========================
-SECTIONS
+   SECTIONS
 ========================= */
 
 .section{
-padding:80px 10%;
+    padding:80px 10%;
 }
 
 .section h2{
-text-align:center;
-color:var(--navy);
-margin-bottom:20px;
-font-size:2rem;
+    text-align:center;
+    color:var(--navy);
+    margin-bottom:20px;
+    font-size:2rem;
 }
 
 .section-intro{
-text-align:center;
-max-width:850px;
-margin:0 auto 50px auto;
-color:var(--gray);
-font-size:1.1rem;
-}
-
-/* =========================
-CARDS
-========================= */
-
-.card-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-
-
-padding:35px;
-
-border-radius:18px;
-
-box-shadow:
-    0 8px 25px rgba(0,0,0,.06);
-
-transition:.3s ease;
-
-height:100%;
-
-
-}
-
-.card:hover{
-transform:translateY(-8px);
-
-
-box-shadow:
-    0 15px 35px rgba(0,0,0,.12);
-
-
-}
-
-.card h3{
-color:var(--navy);
-margin-bottom:15px;
-}
-
-/* =========================
-LIGHT SECTION
-========================= */
-
-.pathway{
-background:#f5f8fb;
-}
-
-.pathway p{
-text-align:center;
-max-width:900px;
-margin:auto;
-}
-
-/* =========================
-VIDEO
-========================= */
-
-.video-container{
-max-width:900px;
-margin:auto;
-}
-
-.video-container iframe{
-width:100%;
-aspect-ratio:16/9;
-height:auto;
-
-
-border:none;
-
-border-radius:18px;
-
-box-shadow:
-    0 10px 30px rgba(0,0,0,.10);
-
-
-}
-
-/* =========================
-JOURNEY ARC
-========================= */
-
-.journey-arc{
-position:relative;
-
-```
-max-width:1000px;
-
-margin:60px auto;
-
-min-height:340px;
-
-
-}
-
-.journey-arc::before{
-content:"";
-
-
-position:absolute;
-
-left:12%;
-right:12%;
-
-top:140px;
-
-height:140px;
-
-border-top:6px solid var(--teal);
-
-border-radius:50%;
-
-opacity:.5;
-
-
-}
-
-.journey-step{
-position:absolute;
-
-
-width:240px;
-
-background:white;
-
-padding:25px;
-
-border-radius:18px;
-
-text-align:center;
-
-box-shadow:
-    0 8px 25px rgba(0,0,0,.08);
-
-
-}
-
-.journey-step h3{
-color:var(--navy);
-margin-bottom:10px;
-}
-
-.journey-left{
-left:0;
-top:130px;
-}
-
-.journey-center{
-left:50%;
-transform:translateX(-50%);
-top:20px;
-}
-
-.journey-right{
-right:0;
-top:130px;
-}
-
-/* =========================
-NSF NOTE
-========================= */
-
-.nsf-note{
-text-align:center;
-padding:20px;
-color:#777;
-font-size:.9rem;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-background:var(--navy);
-color:white;
-text-align:center;
-padding:40px;
-}
-
-footer p{
-margin-bottom:8px;
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media (max-width: 900px){
-
-
-.navbar{
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
-}
-
-.nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.hero h1{
-    font-size:2.4rem;
-}
-
-.tagline{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 50px auto;
+    color:var(--gray);
     font-size:1.1rem;
 }
 
+/* =========================
+   CARDS
+========================= */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.06);
+
+    transition:.3s ease;
+
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.12);
+}
+
+.card h3{
+    color:var(--navy);
+    margin-bottom:15px;
+}
+
+/* Colored accents */
+
+.card-grid .card:nth-child(1){
+    border-top:5px solid var(--teal);
+}
+
+.card-grid .card:nth-child(2){
+    border-top:5px solid var(--navy);
+}
+
+.card-grid .card:nth-child(3){
+    border-top:5px solid var(--gold);
+}
+
+/* =========================
+   LIGHT SECTION
+========================= */
+
+.pathway{
+    background:#f6f8fb;
+}
+
+.pathway p{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.video-container iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    height:auto;
+
+    border:none;
+    border-radius:18px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.10);
+}
+
+/* =========================
+   JOURNEY
+========================= */
+
 .journey-arc{
-    min-height:auto;
-    display:flex;
-    flex-direction:column;
-    gap:25px;
+    position:relative;
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+    min-height:360px;
 }
 
 .journey-arc::before{
-    display:none;
+    content:"";
+
+    position:absolute;
+
+    left:12%;
+    right:12%;
+
+    top:145px;
+
+    height:140px;
+
+    border-top:6px solid var(--teal);
+
+    border-radius:50%;
+
+    opacity:.6;
 }
 
 .journey-step{
-    position:relative;
-    width:100%;
-    left:auto;
-    right:auto;
-    top:auto;
-    transform:none;
+    position:absolute;
+
+    width:240px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
 }
 
+.journey-step h3{
+    margin-bottom:10px;
+    color:var(--navy);
+}
 
+.journey-left{
+    left:0;
+    top:140px;
+    border-top:6px solid var(--teal);
+}
+
+.journey-center{
+    left:50%;
+    transform:translateX(-50%);
+    top:20px;
+    border-top:6px solid var(--gold);
+}
+
+.journey-right{
+    right:0;
+    top:140px;
+    border-top:6px solid var(--navy);
+}
+
+/* =========================
+   NSF NOTE
+========================= */
+
+.nsf-note{
+    text-align:center;
+    padding:20px;
+    color:#777;
+    font-size:.9rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer p{
+    margin-bottom:8px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        padding:40px 20px 60px 20px;
+    }
+
+    .hero-icon{
+        width:320px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .tagline{
+        font-size:1rem;
+    }
+
+    .section{
+        padding:60px 8%;
+    }
+
+    .journey-arc{
+        min-height:auto;
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .journey-arc::before{
+        display:none;
+    }
+
+    .journey-step{
+        position:relative;
+        width:100%;
+        left:auto;
+        right:auto;
+        top:auto;
+        transform:none;
+    }
 }
