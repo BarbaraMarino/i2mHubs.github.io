@@ -74,30 +74,9 @@ HERO
 ========================= */
 
 .hero{
-padding:100px 20px 100px 20px;
-text-align:center;
-
-
-background:
-    radial-gradient(
-        circle at top right,
-        rgba(44,167,155,.12),
-        transparent 35%
-    ),
-    radial-gradient(
-        circle at bottom left,
-        rgba(0,59,122,.08),
-        transparent 40%
-    ),
-    linear-gradient(
-        180deg,
-        #f7fafc 0%,
-        #ffffff 100%
-    );
-
-overflow:hidden;
-
-
+    padding:80px 20px 80px 20px;
+    text-align:center;
+    background:white;
 }
 
 .hero-brand{
@@ -106,9 +85,9 @@ margin:auto;
 }
 
 .hero-icon{
-width:850px;
-max-width:95%;
-margin-bottom:20px;
+width:500px;
+max-width:90%;
+margin-bottom:15px;
 }
 
 .hero h1{
