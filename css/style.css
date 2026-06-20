@@ -535,3 +535,14 @@ footer p{
     }
 
 }
+
+/* =========================
+   University Logos
+========================= */
+
+.university-logo{
+    max-width:140px;
+    height:auto;
+    margin:15px auto;
+    display:block;
+}
