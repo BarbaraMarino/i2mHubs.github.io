@@ -38,9 +38,14 @@ body{
 
     backdrop-filter:blur(10px);
 
-    position:sticky;
-    top:0;
+position:fixed;
+top:0;
+left:0;
+right:0;
 
+body{
+    padding-top:90px;
+}
     z-index:1000;
 
     box-shadow:0 2px 8px rgba(0,0,0,.08);
