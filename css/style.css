@@ -572,3 +572,24 @@ footer p{
 .nsf-logo{
     max-height:110px;
 }
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-container{
+    max-width:900px;
+    margin:40px auto;
+}
+
+.video-container iframe{
+    width:100%;
+    aspect-ratio:16/9;
+
+    border:none;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.10);
+}
