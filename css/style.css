@@ -541,8 +541,34 @@ footer p{
 ========================= */
 
 .university-logo{
-    max-width:140px;
+    max-width:100px;
     height:auto;
     margin:15px auto;
     display:block;
+}
+
+/* =========================
+   PARTNERS
+========================= */
+
+.partners-section{
+    text-align:center;
+}
+
+.partners-logos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.partner-logo{
+    max-height:90px;
+    width:auto;
+}
+
+.nsf-logo{
+    max-height:110px;
 }
