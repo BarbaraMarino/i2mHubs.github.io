@@ -621,3 +621,45 @@ footer p{
     box-shadow:
         0 10px 30px rgba(0,0,0,.10);
 }
+
+/* =========================
+   MODULE CONTENT
+========================= */
+
+.placeholder-box{
+    margin:30px 0;
+    padding:60px 20px;
+    border:2px dashed #cbd5e1;
+    border-radius:12px;
+    text-align:center;
+    color:#64748b;
+    background:#f8fafc;
+}
+
+.video-placeholder{
+    margin:30px 0;
+    padding:80px 20px;
+    border-radius:12px;
+    background:#e2e8f0;
+    text-align:center;
+    font-weight:600;
+}
+
+.accordion-card{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.accordion-card summary{
+    cursor:pointer;
+    font-weight:700;
+    color:var(--navy);
+    font-size:1.1rem;
+}
+
+.accordion-card p{
+    margin-top:20px;
+}
