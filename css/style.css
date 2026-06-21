@@ -663,3 +663,12 @@ footer p{
 .accordion-card p{
     margin-top:20px;
 }
+
+.content-image{
+    display:block;
+    width:100%;
+    max-width:900px;
+    margin:30px auto;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
