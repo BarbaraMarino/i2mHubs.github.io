@@ -754,4 +754,13 @@ footer p{
         font-size:2.5rem;
     }
 
+.full-width-image{
+    width:100%;
+    max-width:1400px;
+    display:block;
+    margin:30px auto;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+    
 }
