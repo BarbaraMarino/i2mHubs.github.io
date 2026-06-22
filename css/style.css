@@ -756,14 +756,20 @@ footer p{
 }
 
 .full-width-image{
-    width:500px !important;
-    height:auto !important;
+    width:95%;
+    max-width:1100px;
+    height:auto;
     display:block;
     margin:30px auto;
-}
-    .full-width-image{
-    width:300px !important;
-    border:10px solid red !important;
+    border-radius:8px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
     
-
+.image-caption{
+    text-align:center;
+    font-size:0.9rem;
+    color:var(--gray);
+    margin-top:-15px;
+    margin-bottom:30px;
+    font-style:italic;
+}
