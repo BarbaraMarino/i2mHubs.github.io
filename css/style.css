@@ -760,5 +760,9 @@ footer p{
     display:block;
     margin:30px auto;
 }
+    .full-width-image{
+    width:300px !important;
+    border:10px solid red !important;
+}
     
 }
